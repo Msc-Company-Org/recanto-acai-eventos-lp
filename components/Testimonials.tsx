@@ -18,7 +18,7 @@ export function Testimonials() {
                 ))}
               </div>
               <div className="mt-3">
-                <div className="font-semibold text-white">{t.name}</div>
+                <div className="font-semibold text-ink">{t.name}</div>
                 <div className="text-xs text-muted">{t.event}</div>
               </div>
             </div>

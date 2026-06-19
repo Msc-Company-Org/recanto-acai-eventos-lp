@@ -102,21 +102,25 @@ export const included = {
   items: [
     {
       icon: "IceCream",
+      img: "/images/produtos/creme-flocos.jpg",
       title: "Açaí e/ou sorvete premium",
       desc: "Cremosidade de verdade, sem cristais de gelo — aquele sabor que todo mundo lembra.",
     },
     {
       icon: "Utensils",
+      img: "/images/estacao/estacao-complementos.jpg",
       title: "Mesa de acompanhamentos",
       desc: "Mais de 15 itens: frutas, granola, leite em pó, cremes, caldas e crocantes.",
     },
     {
       icon: "UserCheck",
+      img: "/images/eventos/equipe-recanto-evento.jpg",
       title: "Equipe uniformizada",
       desc: "Atendente(s) servindo na hora durante todo o evento, com simpatia e capricho.",
     },
     {
       icon: "Truck",
+      img: "/images/estacao/estacao-atendente-salao.jpg",
       title: "Logística sob medida",
       desc: "Levamos os insumos e montamos o ponto de serviço. Você só recebe a experiência pronta.",
     },
@@ -196,16 +200,19 @@ export const differentials = {
   items: [
     {
       icon: "Award",
+      img: "/images/produtos/acai-cremoso-colher.jpg",
       title: "Açaí & sorvete premium",
       desc: "Fórmula cremosa, sem cristais de gelo. Sabor que impressiona do primeiro ao último convidado.",
     },
     {
       icon: "Sparkles",
+      img: "/images/estacao/estacao-atendente-salao.jpg",
       title: "Servido na hora",
       desc: "Nada de potinhos prontos: nossa equipe monta cada porção na frente do seu convidado.",
     },
     {
       icon: "HandHeart",
+      img: "/images/eventos/festa-tema-rei-leao.jpg",
       title: "Sem dor de cabeça",
       desc: "Levamos, servimos e cuidamos de tudo. Você só escolhe a decoração e aproveita a festa.",
     },

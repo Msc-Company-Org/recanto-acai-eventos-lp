@@ -11,7 +11,7 @@ export function Hero() {
           <span className="inline-block glass rounded-full px-4 py-1.5 text-xs font-semibold text-gold mb-6">
             {hero.badge}
           </span>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] text-white">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] text-ink">
             {hero.titleLead}{" "}
             <span className="text-gold-gradient">{hero.titleHighlight}</span>.
           </h1>
@@ -52,7 +52,7 @@ export function Hero() {
             <div className="absolute -bottom-5 -left-4 glass-strong rounded-2xl px-4 py-3 shadow-glow flex items-center gap-2.5">
               <Star className="w-5 h-5 text-gold shrink-0" />
               <div className="leading-tight">
-                <div className="font-display text-sm font-bold text-white">Servido na hora</div>
+                <div className="font-display text-sm font-bold text-ink">Servido na hora</div>
                 <div className="text-[11px] text-muted">Açaí &amp; sorvete gourmet</div>
               </div>
             </div>

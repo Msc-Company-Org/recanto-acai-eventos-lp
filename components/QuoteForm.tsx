@@ -74,7 +74,7 @@ export function QuoteForm() {
     <section id="orcamento" className="py-20 md:py-28 bg-bg-soft">
       <div className="mx-auto max-w-2xl px-6">
         <div className="glass-strong rounded-3xl p-8 sm:p-10">
-          <h2 className="font-display text-3xl font-bold text-white text-center">
+          <h2 className="font-display text-3xl font-bold text-ink text-center">
             Monte seu orçamento
           </h2>
           <p className="text-muted text-center mt-2">

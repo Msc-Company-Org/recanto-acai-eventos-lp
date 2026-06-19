@@ -10,7 +10,7 @@ export function HowItWorks() {
           {howItWorks.steps.map((step) => (
             <div key={step.n} className="glass rounded-2xl p-7">
               <span className="font-display text-5xl font-bold text-primary/40">{step.n}</span>
-              <h3 className="font-display text-xl font-bold text-white mt-2">{step.title}</h3>
+              <h3 className="font-display text-xl font-bold text-ink mt-2">{step.title}</h3>
               <p className="text-muted mt-2 text-sm leading-relaxed">{step.desc}</p>
             </div>
           ))}

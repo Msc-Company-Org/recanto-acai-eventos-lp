@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site, footer, nav } from "@/lib/content";
 import { MapPin } from "lucide-react";
 import { InstagramIcon, FacebookIcon, TiktokIcon } from "./primitives";
@@ -7,8 +8,19 @@ export function Footer() {
     <footer className="border-t border-line bg-bg-soft py-14">
       <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-3 gap-10">
         <div>
-          <div className="font-display text-xl font-bold">
-            <span className="text-gold">Recanto</span> do Açaí
+          <div className="flex items-center gap-2.5">
+            <span className="relative w-10 h-10 rounded-lg overflow-hidden bg-white ring-1 ring-primary/10 shrink-0">
+              <Image
+                src="/brand/logo-recanto-acai-icone.jpg"
+                alt="Recanto do Açaí"
+                fill
+                sizes="40px"
+                className="object-contain p-0.5"
+              />
+            </span>
+            <div className="font-display text-xl font-bold">
+              <span className="text-primary">Recanto</span> do Açaí
+            </div>
           </div>
           <p className="text-muted text-sm mt-3">{footer.tagline}</p>
           <p className="text-muted text-sm mt-4 flex items-start gap-2">
@@ -16,7 +28,7 @@ export function Footer() {
           </p>
         </div>
         <div>
-          <h4 className="font-semibold text-white mb-3">Navegação</h4>
+          <h4 className="font-semibold text-ink mb-3">Navegação</h4>
           <ul className="space-y-2 text-sm text-muted">
             {nav.map((n) => (
               <li key={n.href}>
@@ -28,7 +40,7 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="font-semibold text-white mb-3">Redes sociais</h4>
+          <h4 className="font-semibold text-ink mb-3">Redes sociais</h4>
           <div className="flex gap-3">
             <a
               href={site.instagram}

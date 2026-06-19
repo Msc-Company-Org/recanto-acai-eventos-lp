@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  /* Paleta da marca — Açaí premium */
-  --color-bg: #0b0214;
-  --color-bg-soft: #11041f;
-  --color-surface: #1a0b2b;
-  --color-surface-2: #20043c;
-  --color-primary: #8327ec;
-  --color-primary-soft: #984ff3;
-  --color-gold: #e6b800;
-  --color-gold-soft: #ffd54a;
-  --color-ink: #f5f0fa;
-  --color-muted: #bdaec6;
-  --color-line: #2a1640;
+  /* Paleta da marca — Açaí premium (tema CLARO) */
+  --color-bg: #fdfaff;
+  --color-bg-soft: #f4ecfb;
+  --color-surface: #ffffff;
+  --color-surface-2: #faf5ff;
+  --color-primary: #7c1fd6;
+  --color-primary-soft: #9a4ff3;
+  --color-gold: #b07d0a;
+  --color-gold-soft: #d4a017;
+  --color-ink: #2a1140;
+  --color-muted: #6c5b80;
+  --color-line: #e9ddf6;
   --color-whats: #25d366;
   --color-whats-dark: #1da851;
 
@@ -21,11 +21,12 @@
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* compensa o header fixo ao navegar por âncoras */
 }
 
 body {
@@ -46,22 +47,26 @@ body {
   font-family: var(--font-display), Georgia, "Times New Roman", serif;
 }
 
+/* "glass" em tema claro = cartão branco translúcido com leve sombra roxa */
 .glass {
-  background: rgba(26, 11, 43, 0.55);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(131, 39, 236, 0.22);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(124, 31, 214, 0.12);
+  box-shadow: 0 8px 30px -18px rgba(124, 31, 214, 0.28);
 }
 
 .glass-strong {
-  background: rgba(26, 11, 43, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(131, 39, 236, 0.3);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(124, 31, 214, 0.18);
+  box-shadow: 0 14px 44px -20px rgba(124, 31, 214, 0.32);
 }
 
+/* Destaque do Hero — degradê roxo vibrante (pop no fundo claro) */
 .text-gold-gradient {
-  background: linear-gradient(120deg, #ffe27a 0%, #e6b800 55%, #b88a00 100%);
+  background: linear-gradient(120deg, #8327ec 0%, #b65cff 50%, #7c1fd6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -69,22 +74,22 @@ body {
 
 .bg-radial-glow {
   background-image:
-    radial-gradient(55% 45% at 82% 0%, rgba(131, 39, 236, 0.22) 0%, transparent 60%),
-    radial-gradient(45% 45% at 0% 100%, rgba(131, 39, 236, 0.14) 0%, transparent 60%);
+    radial-gradient(55% 45% at 82% 0%, rgba(124, 31, 214, 0.1) 0%, transparent 60%),
+    radial-gradient(45% 45% at 0% 100%, rgba(212, 160, 23, 0.1) 0%, transparent 60%);
 }
 
 .shadow-glow {
-  box-shadow: 0 18px 60px -18px rgba(131, 39, 236, 0.5);
+  box-shadow: 0 18px 55px -22px rgba(124, 31, 214, 0.4);
 }
 
 .shadow-gold {
-  box-shadow: 0 18px 60px -18px rgba(230, 184, 0, 0.45);
+  box-shadow: 0 18px 55px -22px rgba(212, 160, 23, 0.45);
 }
 
 .divider-gold {
   height: 2px;
   width: 64px;
-  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  background: linear-gradient(90deg, transparent, var(--color-gold-soft), transparent);
 }
 
 @keyframes float {
@@ -101,13 +106,13 @@ body {
 
 /* ---------- Conteúdo do blog (markdown renderizado) ---------- */
 .prose-recanto { color: var(--color-muted); line-height: 1.8; }
-.prose-recanto h2 { font-family: var(--font-display), serif; color: #fff; font-size: 1.5rem; font-weight: 700; margin: 2rem 0 0.75rem; }
+.prose-recanto h2 { font-family: var(--font-display), serif; color: var(--color-ink); font-size: 1.5rem; font-weight: 700; margin: 2rem 0 0.75rem; }
 .prose-recanto p { margin: 0.85rem 0; }
 .prose-recanto ul { list-style: disc; padding-left: 1.5rem; margin: 0.85rem 0; }
 .prose-recanto li { margin: 0.35rem 0; }
-.prose-recanto a { color: var(--color-gold); text-decoration: underline; }
+.prose-recanto a { color: var(--color-primary); text-decoration: underline; }
 .prose-recanto strong { color: var(--color-ink); }
-.prose-recanto blockquote { border-left: 3px solid var(--color-gold); padding: 0.6rem 0 0.6rem 1rem; margin: 1.25rem 0; background: rgba(131, 39, 236, 0.08); border-radius: 0 0.5rem 0.5rem 0; }
+.prose-recanto blockquote { border-left: 3px solid var(--color-gold-soft); padding: 0.6rem 0 0.6rem 1rem; margin: 1.25rem 0; background: rgba(124, 31, 214, 0.06); border-radius: 0 0.5rem 0.5rem 0; }
 .prose-recanto table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.95rem; }
 .prose-recanto th, .prose-recanto td { border: 1px solid var(--color-line); padding: 0.55rem 0.8rem; text-align: left; }
-.prose-recanto th { color: #fff; background: rgba(131, 39, 236, 0.15); }
+.prose-recanto th { color: var(--color-ink); background: rgba(124, 31, 214, 0.1); }

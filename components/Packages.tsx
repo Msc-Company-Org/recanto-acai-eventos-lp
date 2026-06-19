@@ -22,10 +22,10 @@ export function Packages() {
                   ⭐ {pkg.badge}
                 </span>
               )}
-              <h3 className="font-display text-2xl font-bold text-white">{pkg.name}</h3>
+              <h3 className="font-display text-2xl font-bold text-ink">{pkg.name}</h3>
               <p className="text-gold text-sm font-semibold mt-1">{pkg.tagline}</p>
               <div className="mt-5 mb-6">
-                <span className="font-display text-4xl font-bold text-white">{brl(pkg.price)}</span>
+                <span className="font-display text-4xl font-bold text-ink">{brl(pkg.price)}</span>
               </div>
               <ul className="space-y-3 grow">
                 {pkg.features.map((f) => (
@@ -53,7 +53,7 @@ export function Packages() {
 
         {/* Add-ons */}
         <div className="mt-10 max-w-4xl mx-auto">
-          <h4 className="font-display text-xl font-bold text-white text-center mb-5">
+          <h4 className="font-display text-xl font-bold text-ink text-center mb-5">
             {packages.addons.title}
           </h4>
           <div className="grid sm:grid-cols-2 gap-4">

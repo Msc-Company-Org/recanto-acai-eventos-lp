@@ -20,13 +20,13 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Gallery />
         <EventTypes />
         <HowItWorks />
         <Included />
         <Flavors />
         <Packages />
         <Differentials />
-        <Gallery />
         <Testimonials />
         <QuoteForm />
         <Faq />

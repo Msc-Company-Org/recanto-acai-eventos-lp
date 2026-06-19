@@ -88,7 +88,7 @@ export function SectionTitle({
           {eyebrow}
         </span>
       )}
-      <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3">
+      <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-ink mt-3">
         {title}
       </h2>
       {subtitle && <p className="text-muted text-lg mt-4">{subtitle}</p>}
