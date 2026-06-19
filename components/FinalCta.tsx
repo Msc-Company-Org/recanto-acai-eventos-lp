@@ -10,9 +10,15 @@ export function FinalCta() {
             {finalCta.title}
           </h2>
           <p className="text-muted text-lg mt-4 max-w-xl mx-auto">{finalCta.subtitle}</p>
-          <div className="mt-8 flex justify-center">
-            <WhatsAppCTA message={waDefaultMessage} variant="gold" cta="final">
-              <WhatsappIcon /> {finalCta.cta}
+          <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="#pacotes"
+              className="inline-flex items-center justify-center gap-2 rounded-full font-semibold px-7 py-3.5 bg-gold text-bg hover:bg-gold-soft hover:-translate-y-0.5 shadow-gold transition-all w-full sm:w-auto"
+            >
+              {finalCta.cta}
+            </a>
+            <WhatsAppCTA message={waDefaultMessage} variant="outline" cta="final" className="w-full sm:w-auto">
+              <WhatsappIcon /> Falar no WhatsApp
             </WhatsAppCTA>
           </div>
         </div>

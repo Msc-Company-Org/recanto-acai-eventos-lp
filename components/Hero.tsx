@@ -16,16 +16,16 @@ export function Hero() {
             <span className="text-gold-gradient">{hero.titleHighlight}</span>.
           </h1>
           <p className="text-muted text-lg mt-6 max-w-xl mx-auto md:mx-0 leading-relaxed text-pretty">{hero.subtitle}</p>
-          <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-8">
-            <WhatsAppCTA message={waDefaultMessage} variant="primary" cta="hero">
-              <WhatsappIcon /> {hero.ctaPrimary}
-            </WhatsAppCTA>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start mt-8">
             <a
               href="#pacotes"
-              className="inline-flex items-center justify-center gap-2 rounded-full font-semibold px-7 py-3.5 border border-primary/40 text-ink hover:bg-primary/10 hover:border-primary transition-all"
+              className="inline-flex items-center justify-center gap-2 rounded-full font-semibold px-7 py-3.5 bg-gold text-bg hover:bg-gold-soft hover:-translate-y-0.5 shadow-gold transition-all w-full sm:w-auto"
             >
-              {hero.ctaSecondary}
+              {hero.ctaPrimary}
             </a>
+            <WhatsAppCTA message={waDefaultMessage} variant="outline" cta="hero" className="w-full sm:w-auto">
+              <WhatsappIcon /> {hero.ctaSecondary}
+            </WhatsAppCTA>
           </div>
           <div className="flex gap-8 justify-center md:justify-start mt-10">
             {hero.stats.map((s) => (

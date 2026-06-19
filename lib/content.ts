@@ -39,17 +39,17 @@ export const nav = [
 ] as const;
 
 export const hero = {
-  badge: "Estações Gourmet · Eventos premium no RJ",
-  titleLead: "A estação de açaí e sorvete que vira o",
-  titleHighlight: "ponto alto da sua festa",
+  badge: "Estações Gourmet · A atração que sua festa merece",
+  titleLead: "A estação de açaí e sorvetes que transforma seu evento em uma",
+  titleHighlight: "experiência inesquecível",
   subtitle:
-    "Açaí e sorvete gourmet servidos na hora pela nossa equipe, com +15 acompanhamentos liberados. Você curte a festa — a gente leva a experiência que os convidados não esquecem.",
-  ctaPrimary: "Pedir orçamento no WhatsApp",
-  ctaSecondary: "Ver pacotes e preços",
+    "O autêntico açaí e cremes gourmet ultra cremosos, servidos na hora com uma mesa de mais de 15 toppings premium liberados. Esqueça a logística e aproveite a sua festa enquanto nossa equipe encanta seus convidados.",
+  ctaPrimary: "Reserve sua data",
+  ctaSecondary: "Falar no WhatsApp",
   stats: [
     { value: "Na hora", label: "Servido fresquinho" },
-    { value: "15+", label: "Acompanhamentos" },
-    { value: "Premium", label: "Açaí & sorvete" },
+    { value: "15+", label: "Toppings Premium" },
+    { value: "Premium", label: "Açaí & cremes" },
   ],
 };
 
@@ -70,75 +70,75 @@ export const eventTypes = {
 
 export const howItWorks = {
   title: "Como funciona",
-  subtitle: "Da reserva à festa em 4 passos — sem complicação nenhuma.",
+  subtitle: "Da reserva à festa em 4 passos simples — sem complicação nenhuma.",
   steps: [
     {
       n: "01",
-      title: "Escolha o pacote",
-      desc: "Açaí, sorvete ou o combo com os dois. Você decide o que combina com a sua festa.",
+      title: "Escolha seu Menu",
+      desc: "Selecione entre Açaí Premium, Creme Gourmet ou o nosso aclamado Combo duplo para agradar a todos os perfis de convidados.",
     },
     {
       n: "02",
-      title: "Defina sabores e data",
-      desc: "Monte os sabores, escolha a data e reserve com a gente pelo WhatsApp.",
+      title: "Garanta a Data",
+      desc: "Defina os sabores preferidos, a data do seu evento e garanta sua reserva de forma rápida e prática pelo WhatsApp.",
     },
     {
       n: "03",
-      title: "A gente leva e serve",
-      desc: "Levamos tudo e nossa equipe serve na hora, durante todo o seu evento.",
+      title: "Serviço Impecável",
+      desc: "Nossa equipe chega com antecedência para montar a estação gourmet e servir todos os convidados na hora, com higiene e sofisticação.",
     },
     {
       n: "04",
-      title: "Você só curte",
-      desc: "Seus convidados se deliciam e você aproveita a festa sem preocupação.",
+      title: "Curta o Momento",
+      desc: "Enquanto seus convidados se deliciam com combinações ilimitadas, você relaxa e aproveita a sua festa ao máximo.",
     },
   ],
 };
 
 export const included = {
-  title: "O que está incluso",
+  title: "Estrutura e Serviço Completos",
   subtitle:
-    "Você cuida da decoração do seu jeito. A gente leva o sabor e o serviço completo.",
+    "Nós entregamos uma experiência gourmet pronta. Você só se preocupa em escolher onde quer a estação.",
   items: [
     {
       icon: "IceCream",
       img: "/images/produtos/creme-flocos.jpg",
-      title: "Açaí e/ou sorvete premium",
-      desc: "Cremosidade de verdade, sem cristais de gelo — aquele sabor que todo mundo lembra.",
+      title: "Açaí & Cremes Especiais",
+      desc: "Fórmula ultra cremosa, livre de cristais de gelo e feita com insumos selecionados de alta qualidade.",
     },
     {
       icon: "Utensils",
       img: "/images/estacao/estacao-complementos.jpg",
-      title: "Mesa de acompanhamentos",
-      desc: "Mais de 15 itens: frutas, granola, leite em pó, cremes, caldas e crocantes.",
+      title: "Mesa de Toppings Premium",
+      desc: "Mais de 15 acompanhamentos liberados, incluindo frutas frescas cortadas no dia e marcas líderes de mercado.",
     },
     {
       icon: "UserCheck",
       img: "/images/eventos/equipe-recanto-evento.jpg",
-      title: "Equipe uniformizada",
-      desc: "Atendente(s) servindo na hora durante todo o evento, com simpatia e capricho.",
+      title: "Atendimento Profissional",
+      desc: "Atendentes uniformizados e treinados para servir com simpatia, agilidade e total capricho.",
     },
     {
       icon: "Truck",
       img: "/images/estacao/estacao-atendente-salao.jpg",
-      title: "Logística sob medida",
-      desc: "Levamos os insumos e montamos o ponto de serviço. Você só recebe a experiência pronta.",
+      title: "Logística Sob Medida",
+      desc: "Transporte, montagem e desmontagem rápidos e silenciosos. Zero trabalho para o anfitrião.",
     },
   ],
   note: "Atendimento de aprox. 3h · pensado para ~50 convidados · 2 sabores inclusos. Precisa de mais? A gente personaliza pra você.",
 };
 
 export const packages = {
-  title: "Pacotes & preços",
-  subtitle: "Transparência total. Escolha o seu e reserve a data.",
+  title: "Opções de Pacotes",
+  subtitle: "Escolha o pacote e garanta sua data com 50% de entrada — pague online, na hora, sem chat.",
   options: [
     {
       id: "unico",
       name: "Açaí ou Sorvete",
       price: 1490,
-      tagline: "Escolha um e encante",
+      tagline: "A escolha clássica para surpreender",
       features: [
-        "Açaí premium OU sorvete (você escolhe)",
+        "Açaí premium OU creme gourmet (você escolhe)",
         "Mesa com +15 acompanhamentos",
         "Equipe uniformizada servindo na hora",
         "Insumos e logística inclusos",
@@ -150,14 +150,14 @@ export const packages = {
       id: "combo",
       name: "Açaí + Sorvete",
       price: 1690,
-      tagline: "O combo que agrada todo mundo",
+      tagline: "A experiência completa para seu evento",
       badge: "Mais escolhido",
       features: [
-        "Açaí premium E sorvete — os dois!",
+        "Açaí premium E creme gourmet — os dois!",
         "Mesa com +15 acompanhamentos",
         "Equipe uniformizada servindo na hora",
         "Insumos e logística inclusos",
-        "Agrada quem ama açaí e quem prefere sorvete",
+        "Agrada quem ama açaí e quem prefere creme gourmet",
       ],
       highlighted: true,
       cta: "Quero o combo",
@@ -165,7 +165,7 @@ export const packages = {
   ],
   anchorTitle: "Por que o combo vale mais a pena?",
   anchor:
-    "Por apenas R$ 200 a mais que o pacote único, você leva açaí E sorvete. É a escolha mais inteligente — e a preferida dos nossos clientes.",
+    "Por um investimento de apenas R$ 200 a mais, você oferece açaí E sorvete. A melhor escolha para garantir que 100% dos seus convidados saiam satisfeitos.",
   addons: {
     title: "Quer turbinar a mesa?",
     items: [
@@ -195,26 +195,26 @@ export const flavors = {
 };
 
 export const differentials = {
-  title: "Por que o Recanto do Açaí?",
-  subtitle: "Os detalhes que transformam a sua mesa na lembrança da festa.",
+  title: "Por que escolher o Recanto?",
+  subtitle: "O que nos torna a atração mais comentada e elogiada dos eventos no Rio.",
   items: [
     {
       icon: "Award",
       img: "/images/produtos/acai-cremoso-colher.jpg",
-      title: "Açaí & sorvete premium",
-      desc: "Fórmula cremosa, sem cristais de gelo. Sabor que impressiona do primeiro ao último convidado.",
+      title: "Qualidade Incomparável",
+      desc: "Fórmula premium ultra cremosa, livre de cristais de gelo. Um sabor marcante do primeiro ao último convidado.",
     },
     {
       icon: "Sparkles",
       img: "/images/estacao/estacao-atendente-salao.jpg",
-      title: "Servido na hora",
-      desc: "Nada de potinhos prontos: nossa equipe monta cada porção na frente do seu convidado.",
+      title: "Montado na Hora",
+      desc: "Sem potes prontos ou congelados: nossa equipe monta cada taça de forma personalizada na frente do convidado.",
     },
     {
       icon: "HandHeart",
       img: "/images/eventos/festa-tema-rei-leao.jpg",
-      title: "Sem dor de cabeça",
-      desc: "Levamos, servimos e cuidamos de tudo. Você só escolhe a decoração e aproveita a festa.",
+      title: "Tranquilidade Total",
+      desc: "Nós transportamos, montamos, servimos e cuidamos da limpeza do espaço. Você só curte a sua comemoração.",
     },
   ],
 };
@@ -311,10 +311,10 @@ export const faq = {
 };
 
 export const finalCta = {
-  title: "Vamos adoçar o seu evento?",
+  title: "Garanta a data da sua festa",
   subtitle:
-    "Conte a data e o tipo da sua festa — em minutos preparamos seu orçamento, sem compromisso. As datas mais concorridas esgotam rápido; garanta a sua.",
-  cta: "Pedir orçamento no WhatsApp",
+    "Reserve agora com 50% de entrada — pagamento seguro, na hora, sem precisar de chat. As datas mais concorridas esgotam rápido.",
+  cta: "Reserve sua data",
 };
 
 export const footer = {

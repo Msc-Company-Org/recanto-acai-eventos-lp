@@ -35,15 +35,15 @@ export function Packages() {
                   </li>
                 ))}
               </ul>
-              <WhatsAppCTA
-                message={`Olá, Recanto! 🍇 Tenho interesse no pacote ${pkg.name} (${brl(pkg.price)}) para o meu evento. Pode me passar os detalhes?`}
-                variant={pkg.highlighted ? "gold" : "primary"}
-                cta={`pacote-${pkg.id}`}
-                className="mt-7 w-full"
-              >
-                <WhatsappIcon className="w-4 h-4" /> {pkg.cta}
-              </WhatsAppCTA>
               <ReservarOnline pacote={pkg.id} />
+              <WhatsAppCTA
+                message={`Olá, Recanto! 🍇 Tenho uma dúvida sobre o pacote ${pkg.name} (${brl(pkg.price)}) para o meu evento.`}
+                variant="outline"
+                cta={`pacote-duvida-${pkg.id}`}
+                className="mt-3 w-full !py-2.5 text-sm"
+              >
+                <WhatsappIcon className="w-4 h-4" /> Tirar dúvida no WhatsApp
+              </WhatsAppCTA>
             </div>
           ))}
         </div>

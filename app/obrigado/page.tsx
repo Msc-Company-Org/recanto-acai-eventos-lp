@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { waLink } from "@/lib/utils";
+import { TrackReserva } from "@/components/TrackReserva";
 
 export const metadata: Metadata = {
   title: "Reserva recebida · Recanto do Açaí Eventos",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 export default function Obrigado() {
   return (
     <main className="min-h-screen flex items-center justify-center px-6 bg-radial-glow">
+      <TrackReserva />
       <div className="glass-strong rounded-3xl p-10 md:p-14 max-w-md text-center">
         <div className="text-5xl mb-4">💜</div>
         <h1 className="font-display text-3xl font-bold text-ink">Reserva recebida!</h1>

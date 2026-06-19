@@ -19,12 +19,16 @@ export const EVENTS = {
   CLIQUE_WHATSAPP: "clique_whatsapp",
   ENVIO_FORMULARIO: "envio_formulario",
   SELECAO_PACOTE: "selecao_pacote",
+  INICIO_CHECKOUT: "inicio_checkout",
+  RESERVA_PAGA: "reserva_paga",
 } as const;
 
 // Mapeia o evento interno para o evento padrão do Meta Pixel (otimização de campanha).
 const META_EVENT: Record<string, string> = {
   [EVENTS.CLIQUE_WHATSAPP]: "Contact",
   [EVENTS.ENVIO_FORMULARIO]: "Lead",
+  [EVENTS.INICIO_CHECKOUT]: "InitiateCheckout",
+  [EVENTS.RESERVA_PAGA]: "Purchase",
 };
 
 export function track(event: string, params: Record<string, unknown> = {}): void {
