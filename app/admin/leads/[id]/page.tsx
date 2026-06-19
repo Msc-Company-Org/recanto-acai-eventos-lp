@@ -46,7 +46,7 @@ export default async function LeadDetail({ params }: { params: Promise<{ id: str
 
       <div className="flex flex-wrap items-start justify-between gap-4 mt-4 mb-6">
         <div>
-          <h1 className="font-display text-2xl font-bold text-white">{lead.name || "Sem nome"}</h1>
+          <h1 className="font-display text-2xl font-bold text-ink">{lead.name || "Sem nome"}</h1>
           <p className="text-muted text-sm mt-1">
             <span style={{ color: temp?.color }}>{temp?.emoji} {temp?.label} · score {lead.score}</span>{" "}
             · {stageLabel(lead.stage)}
@@ -67,7 +67,7 @@ export default async function LeadDetail({ params }: { params: Promise<{ id: str
       <div className="grid lg:grid-cols-3 gap-6">
         <div className="lg:col-span-1 space-y-6">
           <div className="glass rounded-2xl p-6">
-            <h2 className="font-semibold text-white mb-3">Dados</h2>
+            <h2 className="font-semibold text-ink mb-3">Dados</h2>
             <table className="w-full text-sm">
               <tbody>
                 {info.map(([k, v]) => (
@@ -85,7 +85,7 @@ export default async function LeadDetail({ params }: { params: Promise<{ id: str
           </div>
 
           <div className="glass rounded-2xl p-6">
-            <h2 className="font-semibold text-white mb-3">Estágio</h2>
+            <h2 className="font-semibold text-ink mb-3">Estágio</h2>
             <form action={moveStageAction} className="flex gap-2">
               <input type="hidden" name="id" value={lead.id} />
               <select name="stage" defaultValue={lead.stage} className={`${field} flex-1`}>
@@ -102,7 +102,7 @@ export default async function LeadDetail({ params }: { params: Promise<{ id: str
 
         <div className="lg:col-span-2 space-y-6">
           <div className="glass rounded-2xl p-6">
-            <h2 className="font-semibold text-white mb-3">Anotar</h2>
+            <h2 className="font-semibold text-ink mb-3">Anotar</h2>
             <form action={addNoteAction} className="flex gap-2">
               <input type="hidden" name="id" value={lead.id} />
               <input name="content" placeholder="Adicionar nota / registro de contato..." className={`${field} flex-1`} />
@@ -113,7 +113,7 @@ export default async function LeadDetail({ params }: { params: Promise<{ id: str
           </div>
 
           <div className="glass rounded-2xl p-6">
-            <h2 className="font-semibold text-white mb-4">Histórico</h2>
+            <h2 className="font-semibold text-ink mb-4">Histórico</h2>
             <div className="space-y-4">
               {activities.map((a) => (
                 <div key={a.id} className="flex gap-3">

@@ -32,7 +32,7 @@ export default async function LeadsPage({
   return (
     <AdminShell active="leads">
       <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
-        <h1 className="font-display text-2xl font-bold text-white">
+        <h1 className="font-display text-2xl font-bold text-ink">
           Leads <span className="text-muted text-base">({rows.length})</span>
         </h1>
         <form className="flex gap-2 flex-wrap">
@@ -98,7 +98,7 @@ export default async function LeadsPage({
       </div>
 
       <details className="glass rounded-2xl p-6 mt-6">
-        <summary className="cursor-pointer font-semibold text-white">+ Adicionar lead manual</summary>
+        <summary className="cursor-pointer font-semibold text-ink">+ Adicionar lead manual</summary>
         <form action={createManualLeadAction} className="grid sm:grid-cols-2 gap-3 mt-4">
           <input name="name" placeholder="Nome" className={field} />
           <input name="whatsapp" placeholder="WhatsApp" className={field} />

@@ -22,7 +22,7 @@ export default async function FunilPage() {
 
   return (
     <AdminShell active="funil">
-      <h1 className="font-display text-2xl font-bold text-white mb-6">Funil de Vendas</h1>
+      <h1 className="font-display text-2xl font-bold text-ink mb-6">Funil de Vendas</h1>
 
       <div className="flex gap-4 overflow-x-auto pb-4">
         {STAGES.map((st) => {
@@ -31,7 +31,7 @@ export default async function FunilPage() {
           return (
             <div key={st.id} className="min-w-[270px] w-[270px] shrink-0">
               <div className="flex items-center justify-between mb-1">
-                <span className="font-semibold text-white flex items-center gap-2">
+                <span className="font-semibold text-ink flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full" style={{ background: st.color }} />
                   {st.label}
                 </span>

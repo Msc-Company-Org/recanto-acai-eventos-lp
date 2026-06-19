@@ -15,7 +15,7 @@ export default async function LoginPage({
   return (
     <div className="min-h-screen flex items-center justify-center px-6 bg-radial-glow">
       <form action={loginAction} className="glass-strong rounded-2xl p-8 w-full max-w-sm">
-        <h1 className="font-display text-2xl font-bold text-white text-center">
+        <h1 className="font-display text-2xl font-bold text-ink text-center">
           <span className="text-gold">Recanto</span> CRM
         </h1>
         <p className="text-muted text-sm text-center mt-1 mb-6">Acesso restrito</p>
