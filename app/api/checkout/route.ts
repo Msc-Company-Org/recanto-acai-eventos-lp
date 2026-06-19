@@ -1,33 +1,30 @@
 import { NextResponse } from "next/server";
 
-// Preços autoritativos no servidor (centavos). Sinal = 50%.
-const PACOTES: Record<string, { nome: string; centavos: number }> = {
-  unico: { nome: "Açaí ou Sorvete", centavos: 149000 },
-  combo: { nome: "Combo Açaí + Sorvete", centavos: 169000 },
+// Price IDs do catálogo Stripe (criados via API; não são segredos).
+const PRICES: Record<string, Record<string, string>> = {
+  unico: { total: "price_1Tk6BbIglSfdwnhTkM0fEGEN", sinal: "price_1Tk6BcIglSfdwnhTZeh6KxsI" },
+  combo: { total: "price_1Tk6BeIglSfdwnhT85BxtYMM", sinal: "price_1Tk6BeIglSfdwnhTnsNy6nic" },
 };
 
 export async function POST(req: Request) {
   try {
     const { pacote = "combo", modo = "total" } = await req.json();
-    const p = PACOTES[pacote] ?? PACOTES.combo;
-    const amount = modo === "sinal" ? Math.round(p.centavos / 2) : p.centavos;
+    const pk = PRICES[pacote] ? pacote : "combo";
+    const md = modo === "sinal" ? "sinal" : "total";
+    const price = PRICES[pk][md];
     const key = process.env.STRIPE_SECRET_KEY;
-    if (!key) {
-      return NextResponse.json({ error: "pagamento indisponível" }, { status: 500 });
-    }
+    if (!key) return NextResponse.json({ error: "pagamento indisponível" }, { status: 500 });
+
     const origin = req.headers.get("origin") || "https://recanto-eventos.vercel.app";
-    const rotulo = modo === "sinal" ? "Sinal 50%" : "Pagamento total";
     const body = new URLSearchParams();
     body.set("mode", "payment");
     body.set("success_url", `${origin}/obrigado?pago=1`);
     body.set("cancel_url", `${origin}/#pacotes`);
+    body.set("line_items[0][price]", price);
     body.set("line_items[0][quantity]", "1");
-    body.set("line_items[0][price_data][currency]", "brl");
-    body.set("line_items[0][price_data][unit_amount]", String(amount));
-    body.set("line_items[0][price_data][product_data][name]", `Recanto do Açaí Eventos — ${p.nome} (${rotulo})`);
-    body.set("payment_method_types[0]", "card");
-    body.set("metadata[pacote]", pacote);
-    body.set("metadata[modo]", modo);
+    body.set("phone_number_collection[enabled]", "true");
+    body.set("metadata[pacote]", pk);
+    body.set("metadata[modo]", md);
     body.set("metadata[origem]", "site-checkout");
 
     const r = await fetch("https://api.stripe.com/v1/checkout/sessions", {
