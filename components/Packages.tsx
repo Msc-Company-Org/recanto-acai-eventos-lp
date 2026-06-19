@@ -1,5 +1,6 @@
 import { packages } from "@/lib/content";
 import { SectionTitle, WhatsAppCTA, WhatsappIcon } from "./primitives";
+import { ReservarOnline } from "./ReservarOnline";
 import { brl } from "@/lib/utils";
 import { Check, Plus } from "lucide-react";
 
@@ -41,6 +42,7 @@ export function Packages() {
               >
                 <WhatsappIcon className="w-4 h-4" /> {pkg.cta}
               </WhatsAppCTA>
+              <ReservarOnline pacote={pkg.id} />
             </div>
           ))}
         </div>
