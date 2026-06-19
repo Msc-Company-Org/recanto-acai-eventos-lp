@@ -20,6 +20,7 @@ export async function POST(req: Request) {
       name: data.nome,
       extraPremium: Number(data.extraPremium) || 0,
       extraNormal: Number(data.extraNormal) || 0,
+      source: data.source,
     });
 
     const row = {
@@ -32,7 +33,7 @@ export async function POST(req: Request) {
       extraPremium: Number(data.extraPremium) || 0,
       extraNormal: Number(data.extraNormal) || 0,
       estimatedValue: Number(data.total) || 0,
-      source: "site",
+      source: data.source === "whatsapp" ? "whatsapp" : "site",
       score,
       temperature,
       stage: "novo",
@@ -44,7 +45,7 @@ export async function POST(req: Request) {
       await db.insert(leadActivities).values({
         leadId: inserted.id,
         type: "criado",
-        content: `Lead recebido pelo site (score ${score}, ${temperature}).`,
+        content: `Lead recebido (${row.source}, score ${score}, ${temperature}).`,
         author: "sistema",
       });
       await notifyNewLead(row);

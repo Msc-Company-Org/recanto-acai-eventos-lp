@@ -7,6 +7,7 @@ export type ScoreInput = {
   name?: string;
   extraPremium?: number;
   extraNormal?: number;
+  source?: string;
 };
 
 // Eventos de maior ticket/intenção pontuam mais.
@@ -37,6 +38,11 @@ export function computeScore(i: ScoreInput): { score: number; temperature: strin
   if (i.whatsapp) s += 8;
   if (i.name) s += 5;
   if ((i.extraPremium || 0) + (i.extraNormal || 0) > 0) s += 8;
+
+  // Engajamento: conversa ativa no WhatsApp (Artemis) indica intenção mais quente.
+  if (i.source === "whatsapp") s += 6;
+  // Lead completo (data + convidados definidos) = mais comprometido.
+  if (i.eventDate && (Number(i.guests) || 0) > 0) s += 5;
 
   const score = Math.min(100, s);
   const temperature = score >= 70 ? "quente" : score >= 45 ? "morno" : "frio";
