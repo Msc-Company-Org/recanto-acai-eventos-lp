@@ -43,7 +43,7 @@ export const hero = {
   titleLead: "A estação de açaí e sorvete que vira o",
   titleHighlight: "ponto alto da sua festa",
   subtitle:
-    "Insumos premium, açaí e sorvete servidos na hora pela nossa equipe — para casamentos, 15 anos, aniversários e qualquer celebração. Você cuida da festa; a gente leva a experiência.",
+    "Açaí e sorvete gourmet servidos na hora pela nossa equipe, com +15 acompanhamentos liberados. Você curte a festa — a gente leva a experiência que os convidados não esquecem.",
   ctaPrimary: "Pedir orçamento no WhatsApp",
   ctaSecondary: "Ver pacotes e preços",
   stats: [
@@ -125,7 +125,7 @@ export const included = {
       desc: "Levamos os insumos e montamos o ponto de serviço. Você só recebe a experiência pronta.",
     },
   ],
-  note: "Atendimento de aprox. [CONFIRMAR: 3h] · pensado para [CONFIRMAR: ~50] convidados · [CONFIRMAR: 2] sabores inclusos. Precisa de mais? A gente personaliza.",
+  note: "Atendimento de aprox. 3h · pensado para ~50 convidados · 2 sabores inclusos. Precisa de mais? A gente personaliza pra você.",
 };
 
 export const packages = {
@@ -293,7 +293,7 @@ export const faq = {
     },
     {
       q: "Quantos convidados o pacote atende?",
-      a: "O pacote base é pensado para [CONFIRMAR: cerca de 50] convidados. Tem mais gente? A gente monta um orçamento sob medida pra você.",
+      a: "O pacote base é pensado para cerca de 50 convidados. Tem mais gente? A gente monta um orçamento sob medida pra você.",
     },
     {
       q: "Quais as formas de pagamento?",
@@ -313,7 +313,7 @@ export const faq = {
 export const finalCta = {
   title: "Vamos adoçar o seu evento?",
   subtitle:
-    "Conte a data e o tipo da sua festa. Em minutos preparamos seu orçamento, sem compromisso.",
+    "Conte a data e o tipo da sua festa — em minutos preparamos seu orçamento, sem compromisso. As datas mais concorridas esgotam rápido; garanta a sua.",
   cta: "Pedir orçamento no WhatsApp",
 };
 
