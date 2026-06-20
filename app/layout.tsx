@@ -4,6 +4,7 @@ import "./globals.css";
 import { site } from "@/lib/content";
 import { Analytics } from "@/components/Analytics";
 import { TrackingListener } from "@/components/TrackingListener";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { JsonLd } from "@/components/JsonLd";
 
 const fraunces = Fraunces({
@@ -76,6 +77,7 @@ export default function RootLayout({
         <JsonLd />
         <Analytics />
         <TrackingListener />
+        <ScrollReveal />
       </body>
     </html>
   );

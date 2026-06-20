@@ -21,6 +21,7 @@ export default function Home() {
       <main>
         <Hero />
         <Gallery />
+        <QuoteForm />
         <EventTypes />
         <HowItWorks />
         <Included />
@@ -28,7 +29,6 @@ export default function Home() {
         <Packages />
         <Differentials />
         <Testimonials />
-        <QuoteForm />
         <Faq />
         <FinalCta />
       </main>

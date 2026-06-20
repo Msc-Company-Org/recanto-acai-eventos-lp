@@ -79,7 +79,7 @@ export function QuoteForm() {
   }
 
   return (
-    <section id="orcamento" className="py-20 md:py-28 bg-bg-soft">
+    <section id="orcamento" className="py-14 md:py-28">
       <div className="mx-auto max-w-2xl px-6">
         <div className="glass-strong rounded-3xl p-8 sm:p-10">
           <h2 className="font-display text-3xl font-bold text-ink text-center">
@@ -155,8 +155,8 @@ export function QuoteForm() {
                     }}
                     className={`rounded-xl border p-4 text-left transition-all ${
                       form.pacote === o.id
-                        ? "border-gold bg-gold/10"
-                        : "border-line bg-bg/40 hover:border-primary"
+                        ? "border-gold bg-gold/10 shadow-[0_0_0_3px_rgba(212,160,23,0.18)] -translate-y-0.5"
+                        : "border-line bg-bg/40 hover:border-primary hover:bg-primary/5"
                     }`}
                   >
                     <div className="font-semibold text-ink">{o.name}</div>

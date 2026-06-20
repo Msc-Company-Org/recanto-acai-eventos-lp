@@ -11,6 +11,10 @@ export type Post = {
   category?: string;
   excerpt?: string;
   readingTime?: string;
+  cover?: string;
+  coverAlt?: string;
+  keywords?: string;
+  audio?: string;
   content: string;
 };
 
@@ -44,6 +48,10 @@ export function getAllPosts(): Post[] {
         category: data.category,
         excerpt: data.excerpt ?? data.description,
         readingTime: data.readingTime,
+        cover: data.cover,
+        coverAlt: data.coverAlt,
+        keywords: data.keywords,
+        audio: data.audio,
         content,
       };
     })

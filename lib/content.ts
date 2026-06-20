@@ -39,23 +39,24 @@ export const nav = [
 ] as const;
 
 export const hero = {
-  badge: "Estações Gourmet · A atração que sua festa merece",
-  titleLead: "A estação de açaí e sorvetes que transforma seu evento em uma",
-  titleHighlight: "experiência inesquecível",
+  badge: "Estações gourmet para eventos · Rio de Janeiro",
+  titleLead: "A estação de açaí que vira o",
+  titleHighlight: "ponto alto da festa",
   subtitle:
-    "O autêntico açaí e cremes gourmet ultra cremosos, servidos na hora com uma mesa de mais de 15 toppings premium liberados. Esqueça a logística e aproveite a sua festa enquanto nossa equipe encanta seus convidados.",
+    "Açaí e sorvete premium, servidos na hora. A gente cuida de tudo.",
   ctaPrimary: "Reserve sua data",
   ctaSecondary: "Falar no WhatsApp",
+  ctaNote: "Reserva 100% online · sua data confirmada na hora 🔒",
   stats: [
     { value: "Na hora", label: "Servido fresquinho" },
-    { value: "15+", label: "Toppings Premium" },
-    { value: "Premium", label: "Açaí & cremes" },
+    { value: "À vontade", label: "Acompanhamentos" },
+    { value: "RJ", label: "Atende toda a cidade" },
   ],
 };
 
 export const eventTypes = {
   title: "Para qualquer celebração",
-  subtitle: "Do casamento à festa de 1 aninho — a gente adoça cada momento da sua celebração.",
+  subtitle: "Do casamento ao aniversário de 1 ano — tem estação pra toda festa.",
   items: [
     { icon: "Heart", label: "Casamentos" },
     { icon: "Crown", label: "15 anos" },
@@ -96,9 +97,9 @@ export const howItWorks = {
 };
 
 export const included = {
-  title: "Estrutura e Serviço Completos",
+  title: "Estrutura e serviço completos",
   subtitle:
-    "Nós entregamos uma experiência gourmet pronta. Você só se preocupa em escolher onde quer a estação.",
+    "Insumos, equipe e logística inclusos. Você só escolhe onde montar a estação.",
   items: [
     {
       icon: "IceCream",
@@ -110,7 +111,7 @@ export const included = {
       icon: "Utensils",
       img: "/images/estacao/estacao-complementos.jpg",
       title: "Mesa de Toppings Premium",
-      desc: "Mais de 15 acompanhamentos liberados, incluindo frutas frescas cortadas no dia e marcas líderes de mercado.",
+      desc: "Acompanhamentos liberados, com frutas cortadas no dia e marcas líderes de mercado.",
     },
     {
       icon: "UserCheck",
@@ -130,7 +131,8 @@ export const included = {
 
 export const packages = {
   title: "Opções de Pacotes",
-  subtitle: "Escolha o pacote e garanta sua data com 50% de entrada — pague online, na hora, sem chat.",
+  subtitle: "Garanta sua data com 50% de entrada — pagamento online, na hora, sem chat. Atendemos poucos eventos por fim de semana, então as melhores datas saem primeiro.",
+  scarcity: "⚡ Agenda limitada — 1 evento por data",
   options: [
     {
       id: "unico",
@@ -139,7 +141,7 @@ export const packages = {
       tagline: "A escolha clássica para surpreender",
       features: [
         "Açaí premium OU creme gourmet (você escolhe)",
-        "Mesa com +15 acompanhamentos",
+        "Mesa de acompanhamentos liberada",
         "Equipe uniformizada servindo na hora",
         "Insumos e logística inclusos",
       ],
@@ -154,7 +156,7 @@ export const packages = {
       badge: "Mais escolhido",
       features: [
         "Açaí premium E creme gourmet — os dois!",
-        "Mesa com +15 acompanhamentos",
+        "Mesa de acompanhamentos liberada",
         "Equipe uniformizada servindo na hora",
         "Insumos e logística inclusos",
         "Agrada quem ama açaí e quem prefere creme gourmet",
@@ -176,27 +178,26 @@ export const packages = {
 };
 
 export const flavors = {
-  // [CONFIRMAR] lista real de acompanhamentos/sabores com o Moisés.
-  title: "Mais de 15 acompanhamentos liberados",
-  subtitle: "Ingredientes frescos e marcas que todo mundo ama.",
+  title: "Acompanhamentos liberados na mesa",
+  subtitle: "Tudo liberado pra montar do seu jeito, sem limite.",
   groups: [
-    { icon: "Apple", title: "Frutas frescas", items: ["Morango", "Banana", "Uva sem semente", "Kiwi"] },
+    { icon: "Apple", title: "Frutas", items: ["Banana"] },
     {
       icon: "Cookie",
-      title: "Crocantes & pós",
-      items: ["Granola", "Leite em pó", "Ovomaltine crocante", "Castanha", "Paçoca", "Confetes"],
+      title: "Crocantes & granulados",
+      items: ["Granola", "Ovomaltine crocante", "Paçoca", "Amendoim", "Granulado", "Leite em pó"],
     },
     {
       icon: "Candy",
-      title: "Caldas & cremes",
-      items: ["Leite condensado", "Creme de ninho", "Creme de avelã", "Calda de morango", "Chocolate"],
+      title: "Doces & caldas",
+      items: ["Confetes", "Jujuba", "Leite condensado", "Calda de morango", "Chocolate"],
     },
   ],
 };
 
 export const differentials = {
   title: "Por que escolher o Recanto?",
-  subtitle: "O que nos torna a atração mais comentada e elogiada dos eventos no Rio.",
+  subtitle: "O cuidado que faz o convidado voltar na mesa o evento inteiro.",
   items: [
     {
       icon: "Award",
@@ -236,8 +237,8 @@ export const gallery = {
     },
     {
       src: "/images/estacao/estacao-complementos.jpg",
-      alt: "Mesa com mais de 15 acompanhamentos do Recanto do Açaí",
-      caption: "+15 acompanhamentos",
+      alt: "Mesa de acompanhamentos liberados do Recanto do Açaí",
+      caption: "Mesa liberada",
     },
     {
       src: "/images/produtos/creme-flocos.jpg",
@@ -311,9 +312,9 @@ export const faq = {
 };
 
 export const finalCta = {
-  title: "Garanta a data da sua festa",
+  title: "Sua data ainda está livre?",
   subtitle:
-    "Reserve agora com 50% de entrada — pagamento seguro, na hora, sem precisar de chat. As datas mais concorridas esgotam rápido.",
+    "Reserve agora com 50% de entrada — 100% online, sem precisar de chat. Atendemos poucos eventos por data e as de fim de semana esgotam primeiro. Garanta a sua antes que reservem.",
   cta: "Reserve sua data",
 };
 
