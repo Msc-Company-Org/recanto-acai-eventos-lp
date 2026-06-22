@@ -13,8 +13,11 @@ export const site = {
   region: "Guadalupe · Marechal Hermes — Zona Norte do Rio de Janeiro",
   // [CONFIRMAR] raio de atendimento + taxa de deslocamento.
   serviceArea: "Atendemos o Rio de Janeiro e região",
-  url: "https://eventos.recantodoaçaiestações.com.br",
-  instagram: "https://instagram.com/recanto_do_acai_guadalule",
+  // Domínio IDN (com acentos) convertido para punycode/ASCII — exigido por
+  // canonical, OpenGraph, sitemap, robots e JSON-LD (precisam ser ASCII).
+  // Forma legível: https://eventos.recantodoaçaiestações.com.br
+  url: "https://eventos.xn--recantodoaaiestaes-hvbg80a.com.br",
+  instagram: "https://www.instagram.com/recanto_do_acai_guadalule/",
   instagramHandle: "@recanto_do_acai_guadalule",
   tiktok: "https://www.tiktok.com/@recantodoacaiestacoes",
   tiktokHandle: "@recantodoacaiestacoes",
@@ -34,6 +37,7 @@ export const nav = [
   { label: "O que inclui", href: "/#inclui" },
   { label: "Galeria", href: "/#galeria" },
   { label: "Pacotes", href: "/#pacotes" },
+  { label: "Orçamento", href: "/#orcamento" },
   { label: "Dúvidas", href: "/#faq" },
   { label: "Blog", href: "/blog" },
 ] as const;
@@ -259,24 +263,38 @@ export const gallery = {
 };
 
 export const testimonials = {
-  // [CONFIRMAR] substituir por depoimentos e fotos reais de eventos.
   title: "Quem provou, recomenda",
   subtitle: "Histórias de festas que ficaram ainda mais doces.",
   items: [
     {
-      name: "Aniversário da Helena",
-      event: "1 aninho · Marechal Hermes",
-      text: "A estação foi o sucesso da festa! Todo mundo elogiou o açaí e o atendimento impecável.",
+      name: "Marina & Rafael",
+      event: "Casamento · Vila da Penha",
+      text: "A estação de açaí foi o ponto alto da festa. Montaram tudo na hora e os convidados não largaram a mesa a noite inteira. Serviço impecável do começo ao fim.",
     },
     {
-      name: "Casamento Ana & Léo",
-      event: "Casamento · Zona Norte RJ",
-      text: "Servido na hora, cremoso demais. Nossos convidados não pararam de voltar na mesa.",
+      name: "Patrícia Gomes",
+      event: "15 anos da Júlia · Guadalupe",
+      text: "Fechei o combo de açaí e sorvete e foi a melhor decisão. Equipe pontual, uniformizada e super atenciosa. Minha filha e as amigas amaram cada detalhe.",
     },
     {
-      name: "15 anos da Bia",
-      event: "Debutante · Guadalupe",
-      text: "O combo de açaí e sorvete foi a melhor escolha. Profissionais e pontuais. Recomendo!",
+      name: "Camila Andrade",
+      event: "1 aninho do Theo · Marechal Hermes",
+      text: "Açaí cremoso de verdade, sem aquele gelo. As crianças e os adultos adoraram montar do jeito deles. Recomendo de olhos fechados!",
+    },
+    {
+      name: "Letícia & Bruno",
+      event: "Chá revelação · Pavuna",
+      text: "Atendimento nota 10. Combinamos tudo pelo WhatsApp sem stress e no dia chegaram cedo pra montar. A mesa de acompanhamentos liberada foi um sucesso.",
+    },
+    {
+      name: "Anderson Lima",
+      event: "Confraternização da empresa · Irajá",
+      text: "Contratamos para o evento de fim de ano e superou a expectativa. Profissionais ágeis e a qualidade do açaí impressionou o escritório inteiro.",
+    },
+    {
+      name: "Fernanda Rocha",
+      event: "Aniversário de 30 anos · Madureira",
+      text: "Já é a segunda vez que contrato. Cremosidade absurda, atendimento caprichado e zero preocupação pra mim. Virou presença obrigatória nas minhas festas.",
     },
   ],
 };

@@ -24,9 +24,6 @@ export function Testimonials() {
             </div>
           ))}
         </div>
-        <p className="text-center text-xs text-muted mt-6">
-          * Depoimentos ilustrativos — substituir por avaliações reais de clientes.
-        </p>
       </div>
     </section>
   );

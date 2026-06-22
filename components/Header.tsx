@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { nav, waDefaultMessage } from "@/lib/content";
 import { WhatsAppCTA, WhatsappIcon } from "./primitives";
+import { MobileNav } from "./MobileNav";
 
 export function Header() {
   return (
@@ -30,11 +31,14 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <WhatsAppCTA message={waDefaultMessage} variant="primary" cta="header" className="!px-4 !py-2.5 text-sm shrink-0">
-          <WhatsappIcon className="w-4 h-4" />
-          <span className="hidden sm:inline">Falar conosco</span>
-          <span className="sm:hidden">WhatsApp</span>
-        </WhatsAppCTA>
+        <div className="flex items-center gap-1.5 shrink-0">
+          <WhatsAppCTA message={waDefaultMessage} variant="primary" cta="header" className="!px-4 !py-2.5 text-sm">
+            <WhatsappIcon className="w-4 h-4" />
+            <span className="hidden sm:inline">Falar conosco</span>
+            <span className="sm:hidden">WhatsApp</span>
+          </WhatsAppCTA>
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
