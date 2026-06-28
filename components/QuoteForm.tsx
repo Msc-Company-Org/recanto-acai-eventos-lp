@@ -18,7 +18,7 @@ type FormState = {
 };
 
 const inputCls =
-  "w-full rounded-xl bg-bg/60 border border-line px-4 py-3 text-ink outline-none focus:border-primary transition-colors";
+  "w-full rounded-xl bg-bg/60 border border-line px-4 py-3 text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all";
 
 export function QuoteForm() {
   const [form, setForm] = useState<FormState>({

@@ -150,7 +150,7 @@ function ReservaContent() {
                   placeholder="Ex: Maria Silva"
                   value={nome}
                   onChange={(e) => setNome(e.target.value)}
-                  className="w-full rounded-xl border border-line bg-white/50 px-4 py-3 text-sm text-ink focus:border-[#7c1fd6] focus:outline-none"
+                  className="w-full rounded-xl border border-line bg-white/50 px-4 py-3 text-sm text-ink focus:border-[#7c1fd6] focus:ring-2 focus:ring-[#7c1fd6]/20 focus:outline-none transition-all"
                 />
               </div>
 
@@ -163,7 +163,7 @@ function ReservaContent() {
                   placeholder="Ex: (21) 99999-9999"
                   value={whatsapp}
                   onChange={(e) => setWhatsapp(e.target.value)}
-                  className="w-full rounded-xl border border-line bg-white/50 px-4 py-3 text-sm text-ink focus:border-[#7c1fd6] focus:outline-none"
+                  className="w-full rounded-xl border border-line bg-white/50 px-4 py-3 text-sm text-ink focus:border-[#7c1fd6] focus:ring-2 focus:ring-[#7c1fd6]/20 focus:outline-none transition-all"
                 />
               </div>
 
@@ -176,7 +176,7 @@ function ReservaContent() {
                     required
                     value={dataEvento}
                     onChange={(e) => setDataEvento(e.target.value)}
-                    className="w-full rounded-xl border border-line bg-white/50 px-4 py-3 text-sm text-ink focus:border-[#7c1fd6] focus:outline-none"
+                    className="w-full rounded-xl border border-line bg-white/50 px-4 py-3 text-sm text-ink focus:border-[#7c1fd6] focus:ring-2 focus:ring-[#7c1fd6]/20 focus:outline-none transition-all"
                   />
                 </div>
 
@@ -186,7 +186,7 @@ function ReservaContent() {
                   <select
                     value={tipoFesta}
                     onChange={(e) => setTipoFesta(e.target.value)}
-                    className="w-full rounded-xl border border-line bg-white/50 px-3 py-3 text-sm text-ink focus:border-[#7c1fd6] focus:outline-none"
+                    className="w-full rounded-xl border border-line bg-white/50 px-3 py-3 text-sm text-ink focus:border-[#7c1fd6] focus:ring-2 focus:ring-[#7c1fd6]/20 focus:outline-none transition-all"
                   >
                     <option value="casamento">Casamento</option>
                     <option value="15anos">15 Anos</option>
@@ -204,7 +204,7 @@ function ReservaContent() {
                 <select
                   value={regiao}
                   onChange={(e) => setRegiao(e.target.value)}
-                  className="w-full rounded-xl border border-line bg-white/50 px-3 py-3 text-sm text-ink focus:border-[#7c1fd6] focus:outline-none"
+                  className="w-full rounded-xl border border-line bg-white/50 px-3 py-3 text-sm text-ink focus:border-[#7c1fd6] focus:ring-2 focus:ring-[#7c1fd6]/20 focus:outline-none transition-all"
                 >
                   <option value="capital">Rio de Janeiro - Capital (Frete Grátis)</option>
                   <option value="baixada">Baixada Fluminense (+ R$ 150,00 de Frete)</option>
