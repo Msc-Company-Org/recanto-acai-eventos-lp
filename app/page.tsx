@@ -9,6 +9,7 @@ import { Differentials } from "@/components/Differentials";
 import { Gallery } from "@/components/Gallery";
 import { Testimonials } from "@/components/Testimonials";
 import { QuoteForm } from "@/components/QuoteForm";
+import { UrgencySection } from "@/components/UrgencySection";
 import { Faq } from "@/components/Faq";
 import { FinalCta } from "@/components/FinalCta";
 import { Footer } from "@/components/Footer";
@@ -28,6 +29,7 @@ export default function Home() {
         <Included />
         <Flavors />
         <Packages />
+        <UrgencySection />
         <Differentials />
         <Testimonials />
         <Faq />
