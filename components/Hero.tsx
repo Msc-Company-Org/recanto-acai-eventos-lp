@@ -23,9 +23,12 @@ export function Hero() {
             >
               {hero.ctaPrimary}
             </a>
-            <WhatsAppCTA message={waDefaultMessage} variant="outline" cta="hero" className="w-full sm:w-auto !py-[1.05rem] text-base">
-              <WhatsappIcon /> {hero.ctaSecondary}
-            </WhatsAppCTA>
+            <a
+              href="#orcamento"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/40 text-ink text-base font-semibold px-8 py-[1.05rem] hover:bg-primary/10 hover:border-primary transition-colors w-full sm:w-auto"
+            >
+              {hero.ctaSecondary}
+            </a>
           </div>
           <p className="text-sm text-muted mt-4">{hero.ctaNote}</p>
           <div className="flex gap-7 sm:gap-8 justify-center md:justify-start mt-10">

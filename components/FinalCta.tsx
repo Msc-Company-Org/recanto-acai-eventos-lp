@@ -17,9 +17,12 @@ export function FinalCta() {
             >
               {finalCta.cta}
             </a>
-            <WhatsAppCTA message={waDefaultMessage} variant="outline" cta="final" className="w-full sm:w-auto">
-              <WhatsappIcon /> Falar no WhatsApp
-            </WhatsAppCTA>
+            <a
+              href="#orcamento"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/40 text-ink text-base font-semibold px-8 py-4 hover:bg-primary/10 hover:border-primary transition-colors w-full sm:w-auto"
+            >
+              Verificar Disponibilidade
+            </a>
           </div>
         </div>
       </div>

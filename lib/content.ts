@@ -44,23 +44,23 @@ export const nav = [
 
 export const hero = {
   badge: "Estações gourmet para eventos · Rio de Janeiro",
-  titleLead: "A estação de açaí que vira o",
-  titleHighlight: "ponto alto da festa",
+  titleLead: "Garanta a estação de açaí na sua festa",
+  titleHighlight: "100% online",
   subtitle:
-    "Açaí e sorvete premium, servidos na hora. A gente cuida de tudo.",
-  ctaPrimary: "Reserve sua data",
-  ctaSecondary: "Falar no WhatsApp",
-  ctaNote: "Reserva 100% online · sua data confirmada na hora 🔒",
+    "Açaí e sorvete gourmet servidos na hora. Escolha o pacote, confirme a data e reserve seu dia em 2 minutos direto na página.",
+  ctaPrimary: "Reserve sua data agora",
+  ctaSecondary: "Simular orçamento",
+  ctaNote: "Confirmação imediata · data bloqueada na agenda na hora 🔒",
   stats: [
     { value: "Na hora", label: "Servido fresquinho" },
     { value: "À vontade", label: "Acompanhamentos" },
-    { value: "RJ", label: "Atende toda a cidade" },
+    { value: "Stripe", label: "Pagamento 100% seguro" },
   ],
 };
 
 export const eventTypes = {
   title: "Para qualquer celebração",
-  subtitle: "Do casamento ao aniversário de 1 ano — tem estação pra toda festa.",
+  subtitle: "Do casamento ao aniversário de 1 ano — reserve a estação perfeita para o seu dia.",
   items: [
     { icon: "Heart", label: "Casamentos" },
     { icon: "Crown", label: "15 anos" },
@@ -74,36 +74,36 @@ export const eventTypes = {
 };
 
 export const howItWorks = {
-  title: "Como funciona",
-  subtitle: "Da reserva à festa em 4 passos simples — sem complicação nenhuma.",
+  title: "Reserva em 4 passos simples",
+  subtitle: "Tudo online direto na página, sem necessidade de chat ou burocracia.",
   steps: [
     {
       n: "01",
       title: "Escolha seu Menu",
-      desc: "Selecione entre Açaí Premium, Creme Gourmet ou o nosso aclamado Combo duplo para agradar a todos os perfis de convidados.",
+      desc: "Selecione entre o pacote simples de Açaí ou Sorvete Gourmet, ou o nosso mais pedido Combo duplo para agradar a todos os convidados.",
     },
     {
       n: "02",
-      title: "Garanta a Data",
-      desc: "Defina os sabores preferidos, a data do seu evento e garanta sua reserva de forma rápida e prática pelo WhatsApp.",
+      title: "Simule Adicionais",
+      desc: "Caso tenha mais de 120 convidados, configure os adicionais de tamanho diretamente no nosso formulário de orçamento.",
     },
     {
       n: "03",
-      title: "Serviço Impecável",
-      desc: "Nossa equipe chega com antecedência para montar a estação gourmet e servir todos os convidados na hora, com higiene e sofisticação.",
+      title: "Confirme com o Sinal",
+      desc: "Pague o sinal de 50% em ambiente seguro via Stripe (cartão em até 3x sem juros) para bloquear a data na nossa agenda oficial na hora.",
     },
     {
       n: "04",
-      title: "Curta o Momento",
-      desc: "Enquanto seus convidados se deliciam com combinações ilimitadas, você relaxa e aproveita a sua festa ao máximo.",
+      title: "Aproveite a Festa",
+      desc: "Nossa equipe chega com antecedência para montar a estação e servir tudo à vontade. O saldo restante você acerta apenas no dia do evento!",
     },
   ],
 };
 
 export const included = {
-  title: "Estrutura e serviço completos",
+  title: "Estrutura e serviço gourmet inclusos",
   subtitle:
-    "Insumos, equipe e logística inclusos. Você só escolhe onde montar a estação.",
+    "Montagem, equipe e insumos estão no pacote. Você só escolhe onde a estação será montada.",
   items: [
     {
       icon: "IceCream",
@@ -130,13 +130,13 @@ export const included = {
       desc: "Transporte, montagem e desmontagem rápidos e silenciosos. Zero trabalho para o anfitrião.",
     },
   ],
-  note: "Atendimento de aprox. 3h · pensado para ~50 convidados · 2 sabores inclusos. Precisa de mais? A gente personaliza pra você.",
+  note: "Atendimento de aprox. 3h · pensado para até 120 convidados base · 2 sabores inclusos. Precisa de mais? A gente personaliza pra você.",
 };
 
 export const packages = {
   title: "Opções de Pacotes",
-  subtitle: "Garanta sua data com 50% de entrada — pagamento online, na hora, sem chat. Atendemos poucos eventos por fim de semana, então as melhores datas saem primeiro.",
-  scarcity: "⚡ Agenda limitada — 1 evento por data",
+  subtitle: "Garanta a exclusividade da sua data com 50% de entrada — pagamento online, seguro e imediato. Atendemos apenas 1 evento por data na agenda.",
+  scarcity: "⚡ Reserva imediata — sua data bloqueada na hora",
   options: [
     {
       id: "unico",
