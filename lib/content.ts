@@ -296,7 +296,7 @@ export const testimonials = {
     {
       name: "Anderson Lima",
       event: "Confraternização da empresa · Irajá",
-      text: "Contratamos para o evento de fim de ano. O processo de pagamento do sinal via Stripe gerou muita segurança no financeiro. Qualidade excelente.",
+      text: "Contratamos para o evento de fim de ano. O processo de pagamento do sinal facilitado via Pix e parcelado no cartão gerou muita segurança no financeiro. Qualidade excelente.",
     },
     {
       name: "Fernanda Rocha",
@@ -323,7 +323,7 @@ export const faq = {
     },
     {
       q: "Quais as formas de pagamento e é seguro?",
-      a: "Sim, é 100% seguro. Processamos todos os pagamentos via Stripe com criptografia bancária. Você paga um sinal de 50% em até 3x sem juros (ou Pix) para travar a data, e o saldo restante de 50% acerta apenas no dia do evento.",
+      a: "Sim, é 100% seguro e criptografado. Você pode pagar o sinal de 50% em até 3x sem juros no Cartão de Crédito ou via Pix com aprovação imediata para travar a data. O saldo restante de 50% é pago apenas no dia do evento.",
     },
     {
       q: "Atendem qual região?",
@@ -339,7 +339,7 @@ export const faq = {
 export const finalCta = {
   title: "Sua data ainda está livre?",
   subtitle:
-    "Garanta sua reserva com 50% de sinal online no Stripe — data bloqueada na hora, sem filas, sem precisar falar com ninguém. Atendemos apenas 1 evento por data na agenda.",
+    "Garanta sua reserva com 50% de sinal online — parcele em 3x sem juros no cartão ou pague via Pix. Data bloqueada na hora na nossa agenda, sem burocracia ou filas. Atendemos apenas 1 evento por data para manter a qualidade gourmet exclusiva.",
   cta: "Reserve sua data agora",
 };
 

@@ -167,6 +167,9 @@ function ReservaContent() {
                 <div className="font-display text-2xl font-bold text-[#7c1fd6] mt-2">
                   {brl(sinal)}
                 </div>
+                <p className="text-[10px] text-[#7c1fd6] font-bold mt-0.5">
+                  ou 3x de {brl(sinal / 3)} sem juros no cartão
+                </p>
                 <p className="text-[11px] text-muted mt-1 leading-normal">
                   Pague metade agora para travar a data. O saldo restante (outros 50%) é pago no dia do evento.
                 </p>
@@ -186,6 +189,9 @@ function ReservaContent() {
                 <div className="font-display text-2xl font-bold text-gold mt-2">
                   {brl(total)}
                 </div>
+                <p className="text-[10px] text-gold font-bold mt-0.5">
+                  ou 3x de {brl(total / 3)} sem juros no cartão
+                </p>
                 <p className="text-[11px] text-muted mt-1 leading-normal">
                   Deixe tudo quitado. Ideal para eventos corporativos e casamentos sem pendências no dia da festa.
                 </p>
