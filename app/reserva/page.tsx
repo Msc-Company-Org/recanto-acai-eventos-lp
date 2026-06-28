@@ -134,7 +134,7 @@ function ReservaContent() {
           <div className="flex items-center gap-3 p-4 bg-[#7c1fd6]/5 rounded-2xl border border-[#7c1fd6]/15">
             <span className="text-2xl">🔒</span>
             <p className="text-xs text-[#70548b] leading-relaxed">
-              O Recanto do Açaí utiliza a tecnologia de criptografia do <strong>Stripe</strong> para processamento de pagamentos. Seus dados estão 100% blindados e seguros.
+              O Recanto do Açaí utiliza criptografia de segurança de nível bancário para o processamento das transações. Seus dados estão 100% protegidos e sua transação é criptografada de ponta a ponta.
             </p>
           </div>
         </div>
@@ -199,7 +199,7 @@ function ReservaContent() {
               disabled={loading}
               className="w-full rounded-full bg-gold text-bg font-bold py-4 text-base hover:bg-gold-soft shadow-gold transition-colors disabled:opacity-50 cta-attention"
             >
-              {loading ? "Processando..." : `Confirmar com ${selectedPayType === "sinal" ? "Sinal" : "Pagamento Total"} 💳`}
+              {loading ? "Redirecionando..." : `Confirmar Reserva (Pix / Cartão 3x) 💳`}
             </button>
             <p className="text-center text-[10px] text-muted">
               Cancelamento grátis até 14 dias antes do evento.

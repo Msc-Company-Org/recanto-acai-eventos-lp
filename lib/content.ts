@@ -33,7 +33,7 @@ export const nav = [
   { label: "Orçamento", href: "/#orcamento" },
   { label: "Dúvidas", href: "/#faq" },
   { label: "Blog", href: "/blog" },
-] as const;
+];
 
 export const hero = {
   badge: "Estações gourmet para eventos · Rio de Janeiro",
@@ -47,7 +47,7 @@ export const hero = {
   stats: [
     { value: "Na hora", label: "Servido fresquinho" },
     { value: "À vontade", label: "Acompanhamentos" },
-    { value: "Stripe", label: "Pagamento 100% seguro" },
+    { value: "Pix ou Cartão", label: "Confirmação na hora" },
   ],
 };
 
@@ -83,7 +83,7 @@ export const howItWorks = {
     {
       n: "03",
       title: "Confirme com o Sinal",
-      desc: "Pague o sinal de 50% em ambiente seguro via Stripe (cartão em até 3x sem juros) para bloquear a data na nossa agenda oficial na hora.",
+      desc: "Pague o sinal de 50% em ambiente seguro via Pix ou Cartão de Crédito (até 3x sem juros) para bloquear a data na nossa agenda oficial na hora.",
     },
     {
       n: "04",
@@ -175,19 +175,33 @@ export const packages = {
 };
 
 export const flavors = {
-  title: "Acompanhamentos liberados na mesa",
-  subtitle: "Tudo liberado pra montar do seu jeito, sem limite.",
+  title: "Sabores e Acompanhamentos",
+  subtitle: "Sabores de Açaí e Sorvetes Gourmet, acompanhados de toppings ilimitados.",
   groups: [
-    { icon: "Apple", title: "Frutas", items: ["Banana"] },
+    {
+      icon: "IceCream",
+      title: "Sabores de Açaí & Sorvete",
+      items: [
+        "Açaí Tradicional",
+        "Açaí de Morango",
+        "Açaí de Banana",
+        "Sorvete de Flocos",
+        "Sorvete de Creme",
+        "Sorvete de Morango",
+        "Sorvete de Chocolate",
+        "Sorvete de Baunilha",
+        "Sorvete Napolitano",
+      ],
+    },
     {
       icon: "Cookie",
-      title: "Crocantes & granulados",
-      items: ["Granola", "Ovomaltine crocante", "Paçoca", "Amendoim", "Granulado", "Leite em pó"],
+      title: "Crocantes & Granulados",
+      items: ["Granola", "Ovomaltine Crocante", "Paçoca", "Amendoim Moido", "Granulado de Chocolate", "Leite em Pó"],
     },
     {
       icon: "Candy",
-      title: "Doces & caldas",
-      items: ["Confetes", "Jujuba", "Leite condensado", "Calda de morango", "Chocolate"],
+      title: "Doces & Caldas",
+      items: ["Confetes de Chocolate", "Jujuba", "Leite Condensado", "Calda de Morango", "Calda de Chocolate"],
     },
   ],
 };
