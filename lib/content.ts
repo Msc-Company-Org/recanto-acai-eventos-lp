@@ -36,18 +36,18 @@ export const nav = [
 ];
 
 export const hero = {
-  badge: "Estações gourmet para eventos · Rio de Janeiro",
-  titleLead: "Garanta a estação de açaí na sua festa",
-  titleHighlight: "100% online",
+  badge: "Casamentos · 15 Anos · Festas Infantis · Confraternizações",
+  titleLead: "Estação Gourmet de Açaí & Sorvete para seu Evento no RJ",
+  titleHighlight: "100% Online",
   subtitle:
-    "Açaí e sorvete gourmet servidos na hora. Escolha o pacote, confirme a data e reserve seu dia em 2 minutos direto na página.",
+    "Açaí e sorvete gourmet artesanais servidos na hora pela nossa equipe com toppings liberados à vontade. Simule seu preço e garanta a exclusividade da sua data a partir de 3x sem juros no cartão ou Pix.",
   ctaPrimary: "Reserve sua data agora",
   ctaSecondary: "Simular orçamento",
-  ctaNote: "Confirmação imediata · data bloqueada na agenda na hora 🔒",
+  ctaNote: "Confirmação imediata · apenas 1 equipe própria por data para qualidade máxima 🔒",
   stats: [
     { value: "Na hora", label: "Servido fresquinho" },
-    { value: "À vontade", label: "Acompanhamentos" },
-    { value: "Pix ou Cartão", label: "Confirmação na hora" },
+    { value: "À vontade", label: "15+ Toppings" },
+    { value: "3x Sem Juros", label: "Pix ou Cartão" },
   ],
 };
 

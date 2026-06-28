@@ -5,8 +5,8 @@ date: 2026-06-19
 category: Guia
 excerpt: "O guia definitivo da estação de açaí para eventos no Rio: como funciona, o que está incluso, preços, dicas para escolher o fornecedor e como reservar sua data sem complicação."
 readingTime: 18 min
-cover: /images/estacao/estacao-atendente-salao.jpg
-coverAlt: "Estação de açaí montada com atendente uniformizada servindo em um evento no Rio de Janeiro"
+cover: /images/estacao/estacao-complementos.jpg
+coverAlt: "Mesa gourmet de complementos da estação de açaí do Recanto com potes cheios e frutas frescas"
 keywords: "estação de açaí para festa, açaí para eventos, buffet de açaí, estação de açaí RJ, carrinho de açaí para festa, açaí para casamento, açaí para festa infantil"
 audio: /audio/estacao-de-acai-para-festa.mp3
 ---

@@ -5,8 +5,8 @@ date: 2026-06-19
 category: Eventos
 excerpt: "Descubra como funciona a estação de açaí e cremes gourmet para casamentos no Rio de Janeiro, o que está incluso e os pacotes especiais."
 readingTime: 4 min
-cover: /images/eventos/equipe-recanto-evento.jpg
-coverAlt: "Equipe uniformizada do Recanto do Açaí servindo a estação em um casamento no RJ"
+cover: /images/produtos/acai-premium-taca.jpg
+coverAlt: "Açaí premium com frutas e coberturas servido em uma taça gourmet para casamento"
 keywords: "estação de açaí para casamento, açaí para casamento, buffet de açaí casamento RJ"
 ---
 

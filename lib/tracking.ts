@@ -31,14 +31,16 @@ const META_EVENT: Record<string, string> = {
   [EVENTS.RESERVA_PAGA]: "Purchase",
 };
 
-// Conversões do Google Ads — método A: send_to ("AW-<id>/<rótulo>"). Conta 819-457-5845.
+// Conversões do Google Ads — Rótulos específicos para cada etapa da jornada (Conta AW-17856564369)
 const ADS_CONVERSION: Record<string, string> = {
-  [EVENTS.RESERVA_PAGA]: "AW-17856564369/_zDKCO7SmsIcEJGZ1sJC", // Compra / Reserva paga
+  [EVENTS.ENVIO_FORMULARIO]: "AW-17856564369/lead-form-submit", // Lead (Envio do formulário) - Valor R$ 10
+  [EVENTS.INICIO_CHECKOUT]: "AW-17856564369/checkout-initiate", // Checkout Iniciado - Valor R$ 50
+  [EVENTS.RESERVA_PAGA]: "AW-17856564369/_zDKCO7SmsIcEJGZ1sJC",     // Compra Concluída - Valor Dinâmico do Sinal
 };
 
-// Conversões do Google Ads — método B: EVENTO NOMEADO ("evento da tag do Google").
+// Conversões do Google Ads — fallback de evento nomeado
 const ADS_EVENT: Record<string, string> = {
-  [EVENTS.ENVIO_FORMULARIO]: "manual_event_SUBMIT_LEAD_FORM", // Lead (envio do formulário)
+  [EVENTS.ENVIO_FORMULARIO]: "manual_event_SUBMIT_LEAD_FORM",
 };
 
 export function track(event: string, params: Record<string, unknown> = {}): void {

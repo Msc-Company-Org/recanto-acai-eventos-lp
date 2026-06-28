@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { SectionTitle } from "@/components/primitives";
 import { ArrowRight } from "lucide-react";
 
@@ -58,7 +57,6 @@ export default function BlogIndex() {
         </div>
       </main>
       <Footer />
-      <WhatsAppFloat />
     </>
   );
 }

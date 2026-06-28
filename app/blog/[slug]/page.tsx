@@ -6,9 +6,7 @@ import { marked } from "marked";
 import { getAllPosts, getPost } from "@/lib/blog";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-import { WhatsAppCTA, WhatsappIcon } from "@/components/primitives";
-import { site, waDefaultMessage } from "@/lib/content";
+import { site } from "@/lib/content";
 import { ArrowLeft } from "lucide-react";
 
 export function generateStaticParams() {
@@ -111,16 +109,18 @@ export default async function BlogPost({
           />
           <div className="mt-12 glass-strong rounded-2xl p-7 text-center">
             <p className="font-display text-xl text-ink mb-4">
-              Vamos adoçar o seu evento?
+              Vamos garantir a exclusividade da sua data online?
             </p>
-            <WhatsAppCTA message={waDefaultMessage} variant="gold">
-              <WhatsappIcon /> Pedir orçamento no WhatsApp
-            </WhatsAppCTA>
+            <Link
+              href="/#orcamento"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-gold text-bg font-bold px-7 py-3.5 hover:bg-gold-soft shadow-gold transition-colors"
+            >
+              Simular Orçamento & Reservar Online 💳
+            </Link>
           </div>
         </article>
       </main>
       <Footer />
-      <WhatsAppFloat />
     </>
   );
 }

@@ -118,6 +118,23 @@ export function QuoteForm() {
           </p>
 
           <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+            {/* Seletor de Data Estilizado como Calendário Gourmet */}
+            <div className="bg-[#7c1fd6]/5 rounded-2xl p-5 border border-[#7c1fd6]/15 mb-4">
+              <div className="flex justify-between items-center mb-3">
+                <span className="text-xs font-bold text-[#7c1fd6] uppercase tracking-wider block">1. Selecione a Data no Calendário 📅</span>
+                <span className="flex items-center gap-1.5 text-[10px] font-bold text-whats bg-whats/10 px-2 py-0.5 rounded-full animate-pulse">
+                  <span className="w-1.5 h-1.5 rounded-full bg-whats"></span> Agenda Online Disponível
+                </span>
+              </div>
+              <input
+                required
+                type="date"
+                className="w-full rounded-xl bg-white border border-[#7c1fd6]/30 px-4 py-3 text-ink outline-none focus:border-[#7c1fd6] focus:ring-2 focus:ring-[#7c1fd6]/20 font-bold text-center text-base transition-all"
+                value={form.data}
+                onChange={(e) => set("data", e.target.value)}
+              />
+            </div>
+
             <div className="grid sm:grid-cols-2 gap-4">
               <Field label="Seu nome">
                 <input
@@ -138,15 +155,6 @@ export function QuoteForm() {
                   inputMode="tel"
                 />
               </Field>
-              <Field label="Data do evento">
-                <input
-                  required
-                  type="date"
-                  className={inputCls}
-                  value={form.data}
-                  onChange={(e) => set("data", e.target.value)}
-                />
-              </Field>
               <Field label="Convidados (aprox.)">
                 <input
                   required
@@ -158,21 +166,20 @@ export function QuoteForm() {
                   placeholder="50"
                 />
               </Field>
+              <Field label="Tipo de evento">
+                <select
+                  className={inputCls}
+                  value={form.tipo}
+                  onChange={(e) => set("tipo", e.target.value)}
+                >
+                  {eventTypes.items.map((o) => (
+                    <option key={o.label} value={o.label}>
+                      {o.label}
+                    </option>
+                  ))}
+                </select>
+              </Field>
             </div>
-
-            <Field label="Tipo de evento">
-              <select
-                className={inputCls}
-                value={form.tipo}
-                onChange={(e) => set("tipo", e.target.value)}
-              >
-                {eventTypes.items.map((o) => (
-                  <option key={o.label} value={o.label}>
-                    {o.label}
-                  </option>
-                ))}
-              </select>
-            </Field>
 
             <div>
               <span className="block text-sm font-semibold text-ink mb-2">Pacote</span>

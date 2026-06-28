@@ -5,8 +5,8 @@ date: 2026-06-17
 category: Eventos
 excerpt: "Compare nossos pacotes de estação de açaí e cremes, conheça o que está incluso no serviço e solicite seu orçamento para eventos no Rio."
 readingTime: 5 min
-cover: /images/produtos/acai-cremoso-colher.jpg
-coverAlt: "Açaí cremoso premium servido na hora em uma estação de açaí para festa no RJ"
+cover: /images/produtos/sorvete-flocos-gourmet.jpg
+coverAlt: "Sorvete de flocos gourmet com cobertura de chocolate e granulados"
 keywords: "quanto custa estação de açaí, preço estação de açaí para festa, açaí para eventos RJ valor"
 ---
 
